@@ -10,6 +10,9 @@
 			.then(response => response.json())
 			.then(data => {
 				window.location = data.assets[0].browser_download_url;
+				setTimeout(function(){
+					window.location = "https://stuff.visualdroids.com";
+				}, 5000);
 			});
 	</script>
 </body>
